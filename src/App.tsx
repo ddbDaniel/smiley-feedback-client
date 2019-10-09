@@ -1,41 +1,53 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
+import { Rating } from "./Rating";
+import { Reporting } from "./Reporting";
+import { Administration } from "./Administration";
+import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "@apollo/react-hooks";
+
+const client = new ApolloClient({
+  uri: "https://smiley-feedback-db.herokuapp.com/v1/graphql"
+});
 
 const App: React.FC = () => {
-  const [rated, setRated] = useState(false);
+  return (
+    <ApolloProvider client={client}>
+      <BrowserRouter>
+        <div className="App">
+          <header className="App-header">
+            Rating App
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/rate">Rate</Link>
+                </li>
+                <li>
+                  <Link to="/reporting">Reporting</Link>
+                </li>
+                <li>
+                  <Link to="/admin">Admin</Link>
+                </li>
+              </ul>
+            </nav>
+          </header>
 
-  const onclickbutton = (value: number) => {
-    // TODO: Speichern der Bewertung
-    setRated(true);
-    setInterval(() => setRated(false), 5000);
-  };
-
-  if (rated) {
-    return (
-      <div className="App">
-        <header className="App-header">Danke für das Feedback! </header>
-      </div>
-    );
-  } else {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <button className="button" onClick={() => onclickbutton(4)}>
-            Sehr Gut
-          </button>
-          <button className="button" onClick={() => onclickbutton(3)}>
-            Gut
-          </button>
-          <button className="button" onClick={() => onclickbutton(2)}>
-            Schlecht
-          </button>
-          <button className="button" onClick={() => onclickbutton(1)}>
-            Sehr schlecht
-          </button>
-        </header>
-      </div>
-    );
-  }
+          <Switch>
+            <Route path="/rate">
+              <Rating />
+            </Route>
+            <Route path="/reporting">
+              <Reporting />
+            </Route>
+            <Route path="/admin">
+              <Administration />
+            </Route>
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </ApolloProvider>
+  );
 };
 
 export default App;
