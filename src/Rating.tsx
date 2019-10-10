@@ -24,6 +24,7 @@ export const Rating: React.FC = () => {
     return (
       <div className="App">
         <div className="buttons">
+          {/* <div className="smileyBox"> */}
           <button className="button4" onClick={() => onclickbutton(4)}>
             <div className="eyes">
               <div className="eye"></div>
@@ -52,6 +53,7 @@ export const Rating: React.FC = () => {
             </div>
             <div className="mouth1"></div>
           </button>
+          {/* </div> */}
         </div>
       </div>
     );

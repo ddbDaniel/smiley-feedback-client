@@ -18,7 +18,7 @@ const App: React.FC = () => {
         <div className="App">
           <header className="App-header">
             <div className="title">
-              <p>Rating App</p>
+              <p className="p">Rating App</p>
             </div>
             <nav>
               <ul className="list">

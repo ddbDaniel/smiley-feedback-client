@@ -14,16 +14,16 @@
 }
 
 .mouth3 {
-  width: 40%;
-  height: 15%;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 200px;
-  border-bottom-right-radius: 200px;
+  width: 50%;
+  height: 10%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
   box-sizing: border-box;
   position: absolute;
-  bottom: 18%;
-  left: 50%;
+  bottom: 28%;
+  left: 45%;
   margin-left: -20%;
   background: #b57700;
 }
