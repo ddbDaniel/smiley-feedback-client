@@ -18,26 +18,26 @@ const App: React.FC = () => {
         <div className="App">
           <header className="App-header">
             <div className="title">
-              <p className="p">Rating App</p>
+              <h3 className="h3">Rating App</h3>
             </div>
             <nav>
-              <ul className="list">
-                <li>
-                  <Link className="link" to="/rate">
-                    Rate
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/reporting">
-                    Reporting
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/admin">
-                    Admin
-                  </Link>
-                </li>
-              </ul>
+              {/* <ul className="list">
+                <li> */}
+              <Link className="link" to="/rate">
+                {/* Rate */}
+              </Link>
+              {/* </li>
+                <li> */}
+              <Link className="link" to="/reporting">
+                {/* Reporting */}
+              </Link>
+              {/* </li>
+                <li> */}
+              <Link className="link" to="/admin">
+                {/* Admin */}
+              </Link>
+              {/* </li>
+              </ul> */}
             </nav>
           </header>
 
