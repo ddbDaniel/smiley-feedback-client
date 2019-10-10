@@ -1,17 +1,25 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background-color: #282c34;
+  background-color: #1d283d;
   color: #ffffff;
 }
 
+.title {
+  width: 100%;
+  background-color: #161e2e;
+}
+
 .auswertung {
-  width: 33%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 34%;
+  margin-right: 34%;
   border: 1px solid white;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1d283d;
   min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -21,7 +29,7 @@
   font-family: "Segoe UI";
   font-size: 300%;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 40px;
 }
 
@@ -31,10 +39,23 @@
 }
 
 .list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 90%;
   color: #ffffff;
 }
 
 .link {
+  text-decoration: none;
   color: #ffffff;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  color: #6b84b6;
 }

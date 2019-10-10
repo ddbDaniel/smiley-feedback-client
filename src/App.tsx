@@ -17,7 +17,9 @@ const App: React.FC = () => {
       <BrowserRouter>
         <div className="App">
           <header className="App-header">
-            <p>Rating App</p>
+            <div className="title">
+              <p>Rating App</p>
+            </div>
             <nav>
               <ul className="list">
                 <li>
