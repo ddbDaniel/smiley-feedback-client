@@ -1,25 +1,40 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
+.auswertung {
+  width: 33%;
+  border: 1px solid white;
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 20vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 300%;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 40px;
 }
 
-.App-link {
-  color: #09d3ac;
+.router {
+  display: flex;
+  flex-direction: row;
 }
 
-.button {
+.list {
+  font-size: 90%;
+  color: #ffffff;
+}
+
+.link {
+  color: #ffffff;
 }

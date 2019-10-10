@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
+import "./buttons.css";
+import "./hover.css";
+import "./eyes.css";
+import "./mouth.css";
 
 export const Rating: React.FC = () => {
   const [rated, setRated] = useState(false);
@@ -7,7 +11,7 @@ export const Rating: React.FC = () => {
   const onclickbutton = (value: number) => {
     // TODO: Speichern der Bewertung
     setRated(true);
-    setInterval(() => setRated(false), 5000);
+    setInterval(() => setRated(false), 3000);
   };
 
   if (rated) {
@@ -19,18 +23,36 @@ export const Rating: React.FC = () => {
   } else {
     return (
       <div className="App">
-        <button className="button" onClick={() => onclickbutton(4)}>
-          Sehr Gut
-        </button>
-        <button className="button" onClick={() => onclickbutton(3)}>
-          Gut
-        </button>
-        <button className="button" onClick={() => onclickbutton(2)}>
-          Schlecht
-        </button>
-        <button className="button" onClick={() => onclickbutton(1)}>
-          Sehr schlecht
-        </button>
+        <div className="buttons">
+          <button className="button4" onClick={() => onclickbutton(4)}>
+            <div className="eyes">
+              <div className="eye"></div>
+              <div className="eye"></div>
+            </div>
+            <div className="mouth4"></div>
+          </button>
+          <button className="button3" onClick={() => onclickbutton(3)}>
+            <div className="eyes">
+              <div className="eye"></div>
+              <div className="eye"></div>
+            </div>
+            <div className="mouth3"></div>
+          </button>
+          <button className="button2" onClick={() => onclickbutton(2)}>
+            <div className="eyes">
+              <div className="eye"></div>
+              <div className="eye"></div>
+            </div>
+            <div className="mouth2"></div>
+          </button>
+          <button className="button1" onClick={() => onclickbutton(1)}>
+            <div className="eyes">
+              <div className="angryEye1"></div>
+              <div className="angryEye2"></div>
+            </div>
+            <div className="mouth1"></div>
+          </button>
+        </div>
       </div>
     );
   }

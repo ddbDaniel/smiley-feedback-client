@@ -23,11 +23,13 @@ export const Reporting: React.FC = () => {
 
   return (
     <div className="App">
-      Auswertung der Bewertungen
-      <div>{data.surveys[0].title}</div>
-      {data.surveys[0].ratings.map((rate: any) => (
-        <div key={rate.id}>{rate.value}</div>
-      ))}
+      <div className="auswertung">
+        Auswertung der Bewertungen
+        <div>{data.surveys[0].title}</div>
+        {data.surveys[0].ratings.map((rate: any) => (
+          <div key={rate.id}>{rate.value}</div>
+        ))}
+      </div>
     </div>
   );
 };

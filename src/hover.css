@@ -1,0 +1,71 @@
+.button4:hover {
+  background: linear-gradient(
+    135deg,
+    rgb(231, 210, 22) 0%,
+    rgb(236, 142, 0) 100%
+  );
+}
+
+.button4:active {
+  background: linear-gradient(
+    135deg,
+    rgb(255, 233, 25) 0%,
+    rgb(251, 151, 0) 100%
+  );
+  box-shadow: 0 5px rgb(83, 71, 0);
+  transform: translateY(4px);
+}
+
+.button3:hover {
+  background: linear-gradient(
+    135deg,
+    rgb(231, 210, 22) 0%,
+    rgb(236, 142, 0) 100%
+  );
+}
+
+.button3:active {
+  background: linear-gradient(
+    135deg,
+    rgb(255, 233, 25) 0%,
+    rgb(251, 151, 0) 100%
+  );
+  box-shadow: 0 5px rgb(83, 71, 0);
+  transform: translateY(4px);
+}
+
+.button2:hover {
+  background: linear-gradient(
+    135deg,
+    rgb(231, 210, 22) 0%,
+    rgb(236, 142, 0) 100%
+  );
+}
+
+.button2:active {
+  background: linear-gradient(
+    135deg,
+    rgb(255, 233, 25) 0%,
+    rgb(251, 151, 0) 100%
+  );
+  box-shadow: 0 5px rgb(83, 71, 0);
+  transform: translateY(4px);
+}
+
+.button1:hover {
+  background: linear-gradient(
+    135deg,
+    rgb(216, 125, 21) 0%,
+    rgb(209, 49, 0) 100%
+  );
+}
+
+.button1:active {
+  background: linear-gradient(
+    135deg,
+    rgb(255, 148, 25) 0%,
+    rgb(251, 59, 0) 100%
+  );
+  box-shadow: 0 5px rgb(83, 71, 0);
+  transform: translateY(4px);
+}

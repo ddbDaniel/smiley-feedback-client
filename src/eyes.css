@@ -1,0 +1,37 @@
+.eyes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: -25%;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.eye {
+  width: 20px;
+  height: 20px;
+  background: #b57700;
+  float: left;
+  border-radius: 100%;
+  position: relative;
+}
+
+.angryEye1 {
+  margin-block-start: 10%;
+  width: 20px;
+  height: 12px;
+  background: #774d00;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  transform: rotate(35deg);
+}
+
+.angryEye2 {
+  margin-block-start: 10%;
+  width: 20px;
+  height: 12px;
+  background: #774d00;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  transform: rotate(-35deg);
+}

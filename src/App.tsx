@@ -17,17 +17,23 @@ const App: React.FC = () => {
       <BrowserRouter>
         <div className="App">
           <header className="App-header">
-            Rating App
+            <p>Rating App</p>
             <nav>
-              <ul>
+              <ul className="list">
                 <li>
-                  <Link to="/rate">Rate</Link>
+                  <Link className="link" to="/rate">
+                    Rate
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/reporting">Reporting</Link>
+                  <Link className="link" to="/reporting">
+                    Reporting
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/admin">Admin</Link>
+                  <Link className="link" to="/admin">
+                    Admin
+                  </Link>
                 </li>
               </ul>
             </nav>
