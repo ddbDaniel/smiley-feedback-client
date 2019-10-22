@@ -3,7 +3,7 @@
   min-height: 100vh;
   background-color: #1d283d;
   color: #ffffff;
-  font-weight: 100;
+  font-weight: 700;
 }
 
 .title {
@@ -13,10 +13,14 @@
 
 .auswertung {
   display: flex;
-  flex-direction: column;
-  margin-left: 34%;
-  margin-right: 34%;
-  border: 1px solid white;
+  flex-direction: row;
+  margin-left: 30%;
+  margin-right: 30%;
+  box-sizing: border-box;
+  height: 50px;
+  border: 3px solid white;
+  font-weight: 100;
+  align-items: center;
 }
 
 .App-header {
@@ -63,4 +67,29 @@
 
 .h3 {
   font-weight: 300;
+}
+
+.vierer {
+  margin-left: 5%;
+}
+
+.dreier {
+  margin-left: 5%;
+}
+
+.zweier {
+  margin-left: 5%;
+}
+
+.einser {
+  margin-right: 5%;
+}
+
+.Gesamtauswertung {
+  margin-left: 5%;
+}
+
+.emoji {
+  font-size: 200%;
+  height: 110%;
 }
