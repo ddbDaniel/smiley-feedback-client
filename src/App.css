@@ -100,7 +100,7 @@
   height: 2.7vw;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
   .auswertung {
     margin-right: 5%;
     margin-left: 5%;
@@ -122,5 +122,30 @@
 
   .h3 {
     font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .auswertung {
+    margin-right: 10%;
+    margin-left: 10%;
+    box-sizing: border-box;
+    height: 9vw;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.7vw;
+  }
+
+  .emoji {
+    font-size: 4vw;
+    height: 70%;
+  }
+
+  .App {
+    font-size: 2vw;
+  }
+
+  .h3 {
+    font-size: 6vw;
   }
 }
