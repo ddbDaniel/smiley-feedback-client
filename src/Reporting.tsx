@@ -6,7 +6,6 @@ import "./buttons.css";
 import "./hover.css";
 import "./eyes.css";
 import "./mouth.css";
-import "./smiley4.css";
 
 const SURVEYS = gql`
   query AverageRating {
