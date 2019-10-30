@@ -71,22 +71,27 @@
     height: 26vw;
     margin-left: 4vw;
     margin-right: 4vw;
+    border-radius: 12vw;
   }
 
   .button4 {
     height: 18vw;
     width: 18vw;
+    border-radius: 10vw;
   }
   .button3 {
     height: 18vw;
     width: 18vw;
+    border-radius: 10vw;
   }
   .button2 {
     height: 18vw;
     width: 18vw;
+    border-radius: 10vw;
   }
   .button1 {
     height: 18vw;
     width: 18vw;
+    border-radius: 10vw;
   }
 }

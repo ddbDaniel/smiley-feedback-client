@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
   background-color: #1d283d;
   color: #ffffff;
@@ -16,16 +17,17 @@
 .auswertung {
   display: flex;
   flex-direction: row;
-  margin-left: 26%;
-  margin-right: 26%;
+  margin-left: 14%;
+  margin-right: 14%;
   box-sizing: border-box;
   height: 5vw;
   margin-block-start: 2%;
   border: 3px solid white;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 1vw;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
 .App-header {

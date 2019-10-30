@@ -1,0 +1,63 @@
+.Formular {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 3px solid white;
+  font-size: 1vw;
+}
+
+.titel {
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px solid white;
+  background-color: #1d283d;
+  color: white;
+}
+
+.datum {
+  margin-left: 40%;
+  margin-right: 40%;
+  border: 1px solid white;
+  background-color: #1d283d;
+  color: white;
+}
+
+.kommentar {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-block-end: 3%;
+  height: 5vw;
+  border: 1px solid white;
+  background-color: #1d283d;
+  color: white;
+}
+.submit {
+  margin-left: 45%;
+  margin-right: 45%;
+  background-color: #9ac2e0;
+  border: 0px;
+  margin-block-end: 2%;
+}
+
+.surveys {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1vw;
+}
+
+.Table {
+  width: 39.8%;
+  border: 2px solid;
+  text-align: left;
+  margin-block-end: 1%;
+}
+
+.Tabelle {
+  font-weight: lighter;
+}

@@ -3,7 +3,7 @@ import "./App.css";
 import { Rating } from "./Rating";
 import { Reporting } from "./Reporting";
 import { Administration } from "./Administration";
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
 
