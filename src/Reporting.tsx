@@ -57,23 +57,23 @@ export const Reporting: React.FC = () => {
         </span>{" "}
         {data.vierer.aggregate.count}
         <div className="dreier"></div>
-        <span className="emoji" role="img" aria-label="veryhappyface">
+        <span className="emoji" role="img" aria-label="happyface">
           🙂
         </span>{" "}
         {data.dreier.aggregate.count}
         <div className="zweier"></div>
-        <span className="emoji" role="img" aria-label="veryhappyface">
+        <span className="emoji" role="img" aria-label="sadface">
           🙁
         </span>{" "}
         {data.zweier.aggregate.count}
         <div className="einser"></div>
-        <span className="emoji" role="img" aria-label="veryhappyface">
+        <span className="emoji" role="img" aria-label="verysadface">
           😡
         </span>{" "}
         {data.einser.aggregate.count}
         <div className="Gesamtauswertung">
-          Gesamtauswertung:{" "}
-          {data.ratings_aggregate.aggregate.avg.value.toFixed(2)}/4
+          Gesamtauswertung: {data.ratings_aggregate.aggregate.avg.value}
+          /4
         </div>
       </div>
     </div>
