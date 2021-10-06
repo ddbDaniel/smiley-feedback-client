@@ -13,7 +13,7 @@ const client = new ApolloClient({
 
 const App: React.FC = () => {
   return (
-    <ApolloProvider client={client}>
+    <ApolloProvider client={client as any}>
       <BrowserRouter>
         <div className="App">
           <header className="App-header">
